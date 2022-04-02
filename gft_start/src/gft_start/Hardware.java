@@ -86,10 +86,7 @@ public class Hardware {
 		System.out.println();
 		System.out.println("id: "+getId());
 		System.out.println("descricao: "+getDescricao());
-		System.out.println("valor: "+getFabricante());
-		
-		
+		System.out.println("valor: "+getFabricante());	
 		
 	}
-	
 }

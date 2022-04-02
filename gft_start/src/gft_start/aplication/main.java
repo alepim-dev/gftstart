@@ -10,6 +10,7 @@ public class main {
 		h.getDetalhesHardware();
 		
 		
+		
 	}
 
 }
