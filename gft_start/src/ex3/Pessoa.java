@@ -52,7 +52,7 @@ public class Pessoa {
 	public static void imprimeTempoVidaRestante(Pessoa p) {
 		if(p.getSexo()== "m" || p.getSexo()== "M" ) {
 			int tempo = 80- getIdade(p);
-			System.out.println(tempo);
+			System.out.println("o tempo de vida restante é de "+ tempo +" anos!");
 		}
 		if(p.getSexo()== "f" || p.getSexo()== "F" ) {
 			int tempo = 73- getIdade(p);
