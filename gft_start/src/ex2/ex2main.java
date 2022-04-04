@@ -1,6 +1,7 @@
 package ex2;
 
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
@@ -45,14 +46,20 @@ public class ex2main {
 	
 	public static  void imprimeRepetidos(int[] v){
 		
-		Set<Integer> n =  new HashSet<>();
-		
-		for(int a: v) {
-				n.add(a);
+		List<Integer> repetidos = new ArrayList<>();
+		for(int q=0; q<v.length; q++) {
+			for(int w=0; w<v.length; w++) {
+				if(v[q]==v[w]&& q!=w) {
+					if(!repetidos.contains(v[q])) {
+					repetidos.add(v[q]);
+				}
+				
+			}
 		}
-		System.out.println(n);
-	}
+		}
+		System.out.println(repetidos);
 	
+	}
 	
 	
 	
@@ -82,16 +89,13 @@ public class ex2main {
 		 
 		 sc.close();
 		
-		for(int a: vetor) {
-			System.out.println(a);
-		}
 		
 		
 		
 	System.out.println(contaPares(vetor));
 	System.out.println(contaImpares(vetor));
 	System.out.println(contarepetidos(vetor));
-	imprimeRepetidos(vetor);
+     imprimeRepetidos(vetor);	
 
 }
 }
