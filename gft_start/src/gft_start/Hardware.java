@@ -89,4 +89,5 @@ public class Hardware {
 		System.out.println("valor: "+getFabricante());	
 		
 	}
+	
 }

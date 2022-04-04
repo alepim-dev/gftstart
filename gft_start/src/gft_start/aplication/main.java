@@ -9,6 +9,7 @@ public class main {
 		var h = new Hardware(1,"desktop",3000.00,"acer");
 		h.getDetalhesHardware();
 		
+	
 		
 		
 	}

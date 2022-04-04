@@ -2,26 +2,26 @@ package gft_start;
 
 public class Memoria {
 
-	private int frequecia;
+	private int frequencia;
 	
 	private int capacidade;
 	private String tipo;
 	
 	public Memoria() {}
 
-	public Memoria(int frequecia, int capacidade, String tipo) {
+	public Memoria(int frequencia, int capacidade, String tipo) {
 		super();
-		this.frequecia = frequecia;
+		this.frequencia = frequencia;
 		this.capacidade = capacidade;
 		this.tipo = tipo;
 	}
 
 	public int getFrequecia() {
-		return frequecia;
+		return frequencia;
 	}
 
-	public void setFrequecia(int frequecia) {
-		this.frequecia = frequecia;
+	public void setFrequencia(int frequencia) {
+		this.frequencia = frequencia;
 	}
 
 	public int getCapacidade() {
@@ -41,6 +41,17 @@ public class Memoria {
 	}
 
 	
-	
+
+	public void getDetalhesHardware() {
+		
+		System.out.println("detalhes da mamoria ");
+		System.out.println();
+		System.out.println("frequencia: "+getFrequecia());
+		System.out.println("quantidade: "+getCapacidade());
+		System.out.println("tipo: "+getTipo());
+		
+		
+		
+	}
 	
 }

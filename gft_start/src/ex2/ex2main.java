@@ -1,6 +1,10 @@
 package ex2;
 
+
+import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
 public class ex2main {
 	
@@ -39,6 +43,18 @@ public class ex2main {
 		return a/2;
 	}
 	
+	public static  void imprimeRepetidos(int[] v){
+		
+		Set<Integer> n =  new HashSet<>();
+		
+		for(int a: v) {
+				n.add(a);
+		}
+		System.out.println(n);
+	}
+	
+	
+	
 	
 	public static void insereNumero(int[] v)	{
 
@@ -75,6 +91,7 @@ public class ex2main {
 	System.out.println(contaPares(vetor));
 	System.out.println(contaImpares(vetor));
 	System.out.println(contarepetidos(vetor));
+	imprimeRepetidos(vetor);
 
 }
 }
