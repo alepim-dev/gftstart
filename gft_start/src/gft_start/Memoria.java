@@ -16,7 +16,7 @@ public class Memoria {
 		this.tipo = tipo;
 	}
 
-	public int getFrequecia() {
+	public int getFrequencia() {
 		return frequencia;
 	}
 
@@ -42,15 +42,14 @@ public class Memoria {
 
 	
 
-	public void getDetalhesHardware() {
+	public void getDetalheMemoria() {
 		
 		System.out.println("detalhes da mamoria ");
 		System.out.println();
-		System.out.println("frequencia: "+getFrequecia());
+		System.out.println("frequencia: "+getFrequencia());
 		System.out.println("quantidade: "+getCapacidade());
 		System.out.println("tipo: "+getTipo());
-		
-		
+	
 		
 	}
 	

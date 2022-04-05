@@ -79,6 +79,15 @@ public class Hardware {
 		this.fabricante = fabricante;
 	}
 	
+	public void InstalarMemoria(Memoria m) {
+		memoria = m;
+	}
+	public void InstalarCPU(CPU c) {
+		cpu = c;
+	}
+	public void InstalarDiscoRigido(DiscoRigido d) {
+		disco = d;
+	}
 	
 	public void getDetalhesHardware() {
 		
@@ -86,8 +95,22 @@ public class Hardware {
 		System.out.println();
 		System.out.println("id: "+getId());
 		System.out.println("descricao: "+getDescricao());
-		System.out.println("valor: "+getFabricante());	
-		
+		System.out.println("valor: "+getValor());
+		System.out.println("fabricante: "+getFabricante());
+		System.out.println();
+		System.out.println("detalhes da memoria ");
+		System.out.println(getMemoria().getCapacidade());
+		System.out.println(getMemoria().getFrequencia());
+		System.out.println(getMemoria().getTipo());
+		System.out.println();
+		System.out.println("detalhes da CPU ");
+		System.out.println(getCpu().getClock());
+		System.out.println(getCpu().getModelo());
+		System.out.println();
+		System.out.println("detalhes do Disco rigido ");
+		System.out.println(getDisco().getCapacidade());
+		System.out.println(getDisco().getTipo());
+		System.out.println(getDisco().getVelocidade());
 	}
 	
 }
