@@ -2,8 +2,10 @@ package ex2;
 
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
 
 public class ex2main {
@@ -31,16 +33,11 @@ public class ex2main {
 	}
 
 	public static  Integer contarepetidos(int[] v){
-		int a=0;
+		Set<Integer> unicos = new HashSet<>();
 		for(int q=0; q<v.length; q++) {
-			for(int w=0; w<v.length; w++) {
-				if(v[q]==v[w]&& q!=w) {
-					a++;
-					break;
-				}
-			}
+					unicos.add(v[q]);	
 		}
-		return a/2;
+		return v.length- unicos.size();
 	}
 	
 	public static  void imprimeRepetidos(int[] v){

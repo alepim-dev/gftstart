@@ -44,7 +44,7 @@ public class Memoria {
 
 	public void getDetalheMemoria() {
 		
-		System.out.println("detalhes da mamoria ");
+		System.out.println("detalhes da memoria ");
 		System.out.println();
 		System.out.println("frequencia: "+getFrequencia());
 		System.out.println("quantidade: "+getCapacidade());

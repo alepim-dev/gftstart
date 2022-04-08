@@ -98,10 +98,7 @@ public class Hardware {
 		System.out.println("valor: "+getValor());
 		System.out.println("fabricante: "+getFabricante());
 		System.out.println();
-		System.out.println("detalhes da memoria ");
-		System.out.println(getMemoria().getCapacidade());
-		System.out.println(getMemoria().getFrequencia());
-		System.out.println(getMemoria().getTipo());
+		memoria.getDetalheMemoria();
 		System.out.println();
 		System.out.println("detalhes da CPU ");
 		System.out.println(getCpu().getClock());
